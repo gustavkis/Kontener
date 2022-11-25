@@ -1,33 +1,79 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Latest compiled and minified CSS -->
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-rel="stylesheet"
-/>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <title>Konténer árak</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-4"></div>
+        <!--Csak ezt az oszlopot használom-->
+        <div class="col-4 border border-dark bg-light">
+          <div>
+            <select
+              class="form-select"
+              id="kontener"
+              aria-label="Default select example"
+            >
+              <option selected>
+                Kérjük, válassza ki a konténer méretét és fajtáját!
+              </option>
+              <option value="cont4">4 m3 sitt / konténer</option>
+              <option value="cont5">5 m3 sitt / konténer</option>
+              <option value="cont6">6 m3 sitt / konténer</option>
 
-    
+              <option value="cont4v">4 m3 vegyes / konténer</option>
+              <option value="cont5v">5 m3 vegyes / konténer</option>
+              <option value="cont6v">6 m3 vegyes / konténer</option>
+              <option value="cont8v">8 m3 vegyes / konténer</option>
+            </select>
+          </div>
+
+
+<div>
+    <select
+              class="form-select"
+              id="telepules"
+              aria-label="Default select example"
+            >
+              <option selected>Kérjük, válassza ki a települést!</option>
+              <option value="telepBp9_10_17">Bp. IX. ker</option>
+              <option value="telepBp9_10_17">Bp. X. ker</option>
+              <option value="telepBp9_10_17">Bp. XVII. ker</option>
+              <option value="telepBp20_21_22_19">Bp. XX. ker</option>
+              <option value="telepBp20_21_22_19">Bp. XXI. ker</option>
+              <option value="telepBp20_21_22_19">Bp. XXII. ker</option>
+              <option value="telepBp20_21_22_19">Bp. XIX. ker</option>
+              <option value="telepGyal_Vecses">Vecsés</option>
+              <option value="telepGyal_Vecses">Gyál</option>
+            </select>
 
 
 
 
 
+</div>
 
 
+        </div>
 
-    
+        <div class="col-4"></div>
+      </div>
+    </div>
+
     <script src="/script.js"></script>
-</body>
+  </body>
 </html>
