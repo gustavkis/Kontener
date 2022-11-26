@@ -13,7 +13,10 @@ mindent ellenőrzök a consolban
 */
 
 function megtalal() {
-  
+  // a BMI alapján
+  eredmeny = azonosit();
+  kiiras(eredmeny);
+  console.log(eredmeny);
 }
 
 
