@@ -19,9 +19,7 @@ function megtalal() {
   console.log(eredmeny);
 }
 
-
-function kiiras(szoveg){
-
+function kiiras(szoveg) {
   // a BMI alapján
   var divem = document.createElement("div");
   divem.setAttribute("class", "alert alert-light");
@@ -29,29 +27,25 @@ function kiiras(szoveg){
   divem.appendChild(arak);
   var eredmeny = document.getElementById("eredmeny");
   eredmeny.appendChild(divem);
-
 }
 
-
-
 function azonosit() {
-
   contener = document.getElementById("kontener").value;
   hely = document.getElementById("telepules").value;
   console.log(contener);
   console.log(hely);
-// ha nem választunk semmit, akkor undefined jelenik meg eredményként, ennek elkerülésére kiíratom a következőt
+  // ha nem választunk semmit, akkor undefined jelenik meg eredményként, ennek elkerülésére kiíratom a következőt
 
-if (
-  contener == "Kérjük, válassza ki a konténer méretét és fajtáját!" ||
-  hely == "Kérjük, válassza ki a települést!"
-) {
-  return " Kérjük, válasszon!";
-}
+  if (
+    contener == "Kérjük, válassza ki a konténer méretét és fajtáját!" ||
+    hely == "Kérjük, válassza ki a települést!"
+  ) {
+    return " Kérjük, válasszon!";
+  }
 
-// Gyál
+  // Gyál
 
-if (contener == "cont4" && hely == "telepGyal_Vecses") {
+  if (contener == "cont4" && hely == "telepGyal_Vecses") {
     return "39000 Ft ";
   } else if (contener == "cont5" && hely == "telepGyal_Vecses") {
     return "41000 Ft ";
@@ -102,11 +96,3 @@ if (contener == "cont4" && hely == "telepGyal_Vecses") {
     return "65000 Ft ";
   }
 }
-
-
-
-
-
-
-
-
