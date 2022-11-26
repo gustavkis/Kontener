@@ -46,7 +46,7 @@ if (
   contener == "Kérjük, válassza ki a konténer méretét és fajtáját!" ||
   hely == "Kérjük, válassza ki a települést!"
 ) {
-  return " Kérjük válasszon!";
+  return " Kérjük, válasszon!";
 }
 
 // Gyál
