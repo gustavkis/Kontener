@@ -23,6 +23,12 @@ function megtalal() {
 
 function azonosit() {
 
+  contener = document.getElementById("kontener").value;
+  hely = document.getElementById("telepules").value;
+  console.log(contener);
+  console.log(hely);
+
+
 // Gyál
 
 if (contener == "cont4" && hely == "telepGyal_Vecses") {
