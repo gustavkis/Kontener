@@ -20,6 +20,19 @@ function megtalal() {
 }
 
 
+function kiiras(szoveg){
+
+  // a BMI alapján
+  var divem = document.createElement("div");
+  divem.setAttribute("class", "alert alert-light");
+  var arak = document.createTextNode(szoveg);
+  divem.appendChild(arak);
+  var eredmeny = document.getElementById("eredmeny");
+  eredmeny.appendChild(divem);
+
+}
+
+
 
 function azonosit() {
 
