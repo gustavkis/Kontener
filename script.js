@@ -40,7 +40,14 @@ function azonosit() {
   hely = document.getElementById("telepules").value;
   console.log(contener);
   console.log(hely);
+// ha nem választunk semmit, akkor undefined jelenik meg eredményként, ennek elkerülésére kiíratom a következőt
 
+if (
+  contener == "Kérjük, válassza ki a konténer méretét és fajtáját!" ||
+  hely == "Kérjük, válassza ki a települést!"
+) {
+  return " Kérjük válasszon!";
+}
 
 // Gyál
 
